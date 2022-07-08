@@ -15,8 +15,8 @@ bot.on('message',(message)=>{
     
     const userId=870527054
     const chatId=message.chat.id 
-    const name=message.from.first_name
-    const username=message.from.username
+    let  name=message.from.first_name
+    let  username=message.from.username || name 
     let keyboards={
         resize_keyboard:true,
         keyboard:[
